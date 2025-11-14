@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  z-index: 10;
+}
+
+.logo {
+  width: 150px;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language-select {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.signin-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.small-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-form input {
+  padding: 15px;
+  width: 60%;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.email-form button {
+  background-color: #e50914;
+  color: white;
+  border-radius: 4px;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.trending-section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.trending-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.trending-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.rank {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+    text-align: left;
+}
+
+.reasons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reason-card {
+  flex: 1 1 220px;
+  background:rgb(10, 10, 63);
+  padding: 20px;
+  border-radius: 15px;
+  min-height: 200px;
+  position: relative;
+}
+
+.reason-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.reason-card p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+.faq-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.email-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.email-section p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.email-form input {
+  width: 300px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #1c1c1c;
+  color: #fff;
+  border-radius: 4px 0 0 4px;
+}
+
+.email-form button {
+  background-color: #e50914;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+}
+
+.email-form button:hover {
+  background-color: #f40612;
+}
+
+.footer {
+  padding: 40px 10%;
+  color: #999;
+  font-size: 14px;
+}
+
+.footer-call {
+  margin-bottom: 20px;
+}
+
+.footer-call a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px 20px;
+}
+
+.footer-links a {
+  display: block;
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 25px;
+  }
+.hero {
+    height: auto;
+    padding: 100px 20px 60px;
+  }
+ .trending-section {
+    padding: 0 20px;
+  }
+
+  .trending-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .trending-list {
+    justify-content: center;
+  }
+  .card {
+    width: 45%;
+  }
+   .reasons-container {
+    flex-direction: column;
+  }
+
+  .reason-card {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+  }
+.footer {
+    padding: 20px;
+    text-align: center;
+  }
+}
