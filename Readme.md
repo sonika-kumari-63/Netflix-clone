@@ -59,8 +59,6 @@ Includes all styling:
 * Footer grid
 * Media queries for responsiveness
 
----
-
 ## How the Website Works
 
 ###  Header
