@@ -7,7 +7,6 @@ The goal of this project is to practice **responsive web design**, **CSS layout 
 ## Features
 
 ### Modern Netflix-style User Interface
-
 The layout matches Netflix's homepage with:
 * Logo and top navigation
 * Hero section with a dark overlay
